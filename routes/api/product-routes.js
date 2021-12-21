@@ -31,7 +31,7 @@ router.get('/:id', async (req, res) => {
   });
 
     if (!productData) {
-      res.status(404).json({ message: 'No traveller found with this id!' });
+      res.status(404).json({ message: 'This product was a trick! It does not exist!' });
       return;
     }
 
@@ -126,7 +126,7 @@ router.delete('/:id', async (req, res) => {
     }
 );
     if (!productData) {
-      res.status(404).json({ message: 'No Category with that name was found!' });
+      res.status(404).json({ message: 'No such product can be found here!' });
       return;
     }
 
